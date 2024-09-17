@@ -71,7 +71,7 @@ public class ZombieHealth : MonoBehaviour
         ZombieSpawner spawner = zombieSpawner.GetComponent<ZombieSpawner>();
         if (spawner != null)
         {
-            spawner.SpawnZombie();
+            spawner.SpawnRandomZombies();
         }
 
     }

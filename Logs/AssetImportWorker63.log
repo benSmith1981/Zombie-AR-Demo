@@ -3019,3 +3019,200 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: b3f407c32bc64c1f4dc80aa4ab21e355 -> 4aa3009c3776744fb7a14dce074f76d9
+========================================================================
+Received Import Request.
+  Time since last request: 1974.907380 seconds.
+  path: Assets/RobTextures
+  artifactKey: Guid(73af539e622ad224b9304567a0b389bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RobTextures using Guid(73af539e622ad224b9304567a0b389bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '780677609b7a3c5939a30f01b4eab117') in 0.006417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.446186 seconds.
+  path: Assets/RobTextures/RobEnemy Variant.prefab
+  artifactKey: Guid(8e8e63954be67f540bf8f80194e4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RobTextures/RobEnemy Variant.prefab using Guid(8e8e63954be67f540bf8f80194e4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '52cb96429dd275af454e1065507e25d0') in 0.008524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.235536 seconds.
+  path: Assets/RobTextures/Rob.prefab
+  artifactKey: Guid(d2e60d0d20761964a99b49260dd85dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RobTextures/Rob.prefab using Guid(d2e60d0d20761964a99b49260dd85dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '830498910594b7857dbcc73889dac070') in 0.148371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 300
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 12.03 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (3.3 MB). Loaded Objects now: 6129.
+Memory consumption went from 121.1 MB to 117.9 MB.
+Total: 7.523800 ms (FindLiveObjects: 0.505900 ms CreateObjectMapping: 0.155600 ms MarkObjects: 5.087100 ms  DeleteObjects: 1.773600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: b3f407c32bc64c1f4dc80aa4ab21e355 -> 4aa3009c3776744fb7a14dce074f76d9
+========================================================================
+Received Import Request.
+  Time since last request: 75.343469 seconds.
+  path: Assets/BrendanTextures/Brendan Variant.prefab
+  artifactKey: Guid(d6208492cf233e34991f78b7108c07dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrendanTextures/Brendan Variant.prefab using Guid(d6208492cf233e34991f78b7108c07dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '8c7a94a3648e691b5836933e20d0963e') in 0.004995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.452509 seconds.
+  path: Assets/BrendanTextures/Brendan.prefab
+  artifactKey: Guid(e78185198e0a5884086488eef4eaaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrendanTextures/Brendan.prefab using Guid(e78185198e0a5884086488eef4eaaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '69079a42712870efe0a55c4ffd89ea2f') in 0.017015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 282
+========================================================================
+Received Import Request.
+  Time since last request: 3.565027 seconds.
+  path: Assets/BrendanTextures/Brendan.prefab
+  artifactKey: Guid(e78185198e0a5884086488eef4eaaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrendanTextures/Brendan.prefab using Guid(e78185198e0a5884086488eef4eaaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '84cbe97b9525777870f49d505a8ed9a3') in 0.066055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 304
+========================================================================
+Received Import Request.
+  Time since last request: 13.372523 seconds.
+  path: Assets/audio/guns/big one.wav
+  artifactKey: Guid(d3247579c549643a5b3a95f9224eaf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/guns/big one.wav using Guid(d3247579c549643a5b3a95f9224eaf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '71123c6a51fc33866a71770e39fbddf1') in 0.006903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007623 seconds.
+  path: Assets/audio/misc bangs/bn2.wav
+  artifactKey: Guid(2cec506c73db14bfeb9b30509db0bdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn2.wav using Guid(2cec506c73db14bfeb9b30509db0bdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '126003a3f2077bc0cc98cd506dc4d69b') in 0.005157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/audio/misc bangs/bn4.wav
+  artifactKey: Guid(8e3b4236a7258471caabb3542eee992b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn4.wav using Guid(8e3b4236a7258471caabb3542eee992b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'd889b3e4cd4a1b96bef3b0d1abc2c12c') in 0.005086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/audio/misc bangs/bn5.wav
+  artifactKey: Guid(2c5d6a7204564419e9bd4a71ec2c7814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn5.wav using Guid(2c5d6a7204564419e9bd4a71ec2c7814) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '8f75c84d12629bdc0e4d1f61246ad850') in 0.004563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/audio/misc bangs/bn 7.wav
+  artifactKey: Guid(7ff3494e5254748538d75169821087d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn 7.wav using Guid(7ff3494e5254748538d75169821087d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'dd44d22a7ae594ddd4da3e19a158598d') in 0.004180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/audio/misc bangs/bn3.wav
+  artifactKey: Guid(24a8534b6c42d45dfb297dc64694378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn3.wav using Guid(24a8534b6c42d45dfb297dc64694378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '7901c61d34232557af10d8a1a7a649c2') in 0.005462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/audio/misc bangs/bn6.wav
+  artifactKey: Guid(42dfb4357294b4e0b916bcf563ac04cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/misc bangs/bn6.wav using Guid(42dfb4357294b4e0b916bcf563ac04cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '9c90cc85c2b59614b7683aa6175a3cb5') in 0.004841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 35.069879 seconds.
+  path: Assets/IdiaSoftware/ZombieFreeCharacterSounds/Z1-Free/Z1-V2-Searching-Free-1.ogg
+  artifactKey: Guid(ff8240148ee026c4babb53949381e1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IdiaSoftware/ZombieFreeCharacterSounds/Z1-Free/Z1-V2-Searching-Free-1.ogg using Guid(ff8240148ee026c4babb53949381e1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'e50339e647af449bf266766dbaecd49b') in 0.005917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.818136 seconds.
+  path: Assets/ShootingSound/laser_01.wav
+  artifactKey: Guid(4310474905e266640852f43bd609a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShootingSound/laser_01.wav using Guid(4310474905e266640852f43bd609a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '3f95581623daadce35effa92fbc6db6c') in 0.025940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/audio/guns/SFX GunAction 3.wav
+  artifactKey: Guid(611f65b2aba4a4af7b4ab3d6ddb5b546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/guns/SFX GunAction 3.wav using Guid(611f65b2aba4a4af7b4ab3d6ddb5b546) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '7b0bd1d91ab0d6fc9aaa372116511423') in 0.003253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/audio/guns/they shoot.wav
+  artifactKey: Guid(cef0fa03af5b747f0abe82cde0b2bccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/audio/guns/they shoot.wav using Guid(cef0fa03af5b747f0abe82cde0b2bccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '6ec29bf7a0fb5b6c33cedff4275d2f10') in 0.004457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
