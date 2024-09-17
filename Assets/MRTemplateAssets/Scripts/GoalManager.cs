@@ -95,7 +95,74 @@ public class GoalManager : MonoBehaviour
 
     const int k_NumberOfSurfacesTappedToCompleteGoal = 1;
     Vector3 m_TargetOffset = new Vector3(-.5f, -.25f, 1.5f);
+    void Start()
+    {
+        // Skip Onboarding and Go Straight to Game
+        SkipOnboardingAndStartGame();
 
+        // Additional initialization that was originally part of the onboarding
+        if (m_TapTooltip != null)
+            m_TapTooltip.SetActive(false);
+
+        if (m_VideoPlayer != null)
+        {
+            m_VideoPlayer.SetActive(false);
+
+            if (m_VideoPlayerToggle != null)
+                m_VideoPlayerToggle.isOn = false;
+        }
+
+        if (m_FadeMaterial != null)
+        {
+            m_FadeMaterial.FadeSkybox(true); // Enable skybox immediately
+
+            if (m_PassthroughToggle != null)
+                m_PassthroughToggle.isOn = true; // Enable passthrough immediately
+        }
+
+        if (m_LearnButton != null)
+        {
+            m_LearnButton.SetActive(false); // Disable any learn buttons immediately
+        }
+
+        if (m_LearnModal != null)
+        {
+            m_LearnModal.transform.localScale = Vector3.zero; // Ensure modal is not shown
+        }
+
+        if (m_LearnModalButton != null)
+        {
+            m_LearnModalButton.onClick.AddListener(CloseModal);
+        }
+
+        if (m_ObjectSpawner == null)
+        {
+#if UNITY_2023_1_OR_NEWER
+        m_ObjectSpawner = FindAnyObjectByType<ObjectSpawner>();
+#else
+            m_ObjectSpawner = FindObjectOfType<ObjectSpawner>();
+#endif
+        }
+    }
+
+    void SkipOnboardingAndStartGame()
+    {
+        // Force the passthrough toggle on (skip menus)
+        if (m_PassthroughToggle != null)
+            m_PassthroughToggle.isOn = true;
+
+        // Enable AR planes (or other gameplay features that were part of onboarding)
+        //if (m_ARPlaneManager != null)
+         //   m_ARPlaneManager.enabled = true;
+
+        // Directly complete onboarding steps
+        CompleteGoal();
+
+        // Set all onboarding goals to finished immediately
+        m_AllGoalsFinished = true;
+        ForceEndAllGoals();
+    }
+    /*
     void Start()
     {
         m_OnboardingGoals = new Queue<Goal>();
@@ -154,6 +221,7 @@ public class GoalManager : MonoBehaviour
 #endif
         }
     }
+    */
 
     void OpenModal()
     {
@@ -267,12 +335,44 @@ public class GoalManager : MonoBehaviour
         }
         */
     }
+    public Material grassMaterial;  // Assign your grass material here
+
 
     public IEnumerator TurnOnPlanes()
     {
         yield return new WaitForSeconds(1f);
         m_ARPlaneManager.enabled = true;
+
+        // Apply grass texture to existing planes
+        foreach (var plane in m_ARPlaneManager.trackables)
+        {
+            ApplyGrassTexture(plane);
+        }
+
+        // Subscribe to the planesChanged event to apply grass texture to newly added planes
+        m_ARPlaneManager.planesChanged += OnPlanesChanged;
     }
+
+    // Apply grass texture to detected planes
+    void ApplyGrassTexture(ARPlane plane)
+    {
+        MeshRenderer meshRenderer = plane.GetComponent<MeshRenderer>();
+        if (meshRenderer != null && grassMaterial != null)
+        {
+            meshRenderer.material = grassMaterial; // Apply your grass material here
+        }
+    }
+
+    // Called when AR planes are added, updated, or removed
+    void OnPlanesChanged(ARPlanesChangedEventArgs args)
+    {
+        // Apply grass texture to newly added planes
+        foreach (var plane in args.added)
+        {
+            ApplyGrassTexture(plane);
+        }
+    }
+
 
     void DisableTooltips()
     {

@@ -1159,8 +1159,6 @@ MonoBehaviour:
   m_ApplyRandomAngleAtSpawn: 1
   m_SpawnAngleRange: 45
   m_SpawnAsChildren: 0
-  m_BulletPrefab: {fileID: 0}
-  m_ShootForce: 10
 --- !u!4 &436358034
 Transform:
   m_ObjectHideFlags: 0

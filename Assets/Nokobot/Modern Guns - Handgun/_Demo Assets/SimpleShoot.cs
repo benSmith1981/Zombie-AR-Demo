@@ -23,6 +23,7 @@ public class SimpleShoot : MonoBehaviour
 
     [Header("XR Controller References")]
     [SerializeField] private XRNode inputSource; // Specify LeftHand or RightHand
+    private AudioSource audioSource; // Reference to the zombie's AudioSource
 
     private InputDevice _device;
     private bool _hasFired;
@@ -36,6 +37,8 @@ public class SimpleShoot : MonoBehaviour
 
         // Get the XR device for the specified input source
         _device = InputDevices.GetDeviceAtXRNode(inputSource);
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
 
         _hasFired = false;
 
@@ -79,7 +82,11 @@ public class SimpleShoot : MonoBehaviour
             // Create the muzzle flash
             GameObject tempFlash;
             tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
-
+            // Stop the zombie's audio
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
             // Destroy the muzzle flash effect
             Destroy(tempFlash, destroyTimer);
         }
