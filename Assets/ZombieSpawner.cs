@@ -37,7 +37,7 @@ public class ZombieSpawner : MonoBehaviour
     // Method to spawn random zombies at random grave spawn points
     public void SpawnRandomZombies()
     {
-       for (int i = 0; i < 2; i++)
+       //for (int i = 0; i < 2; i++)
         {
             // Pick a random zombie prefab from the array
             int zombieIndex = Random.Range(0, zombiePrefabs.Length);
