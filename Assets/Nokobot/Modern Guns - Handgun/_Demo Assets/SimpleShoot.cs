@@ -77,6 +77,8 @@ public class SimpleShoot : MonoBehaviour
     // This function creates the bullet behavior
     void Shoot()
     {
+                        Debug.Log("shoot.");
+
         if (muzzleFlashPrefab)
         {
             // Create the muzzle flash

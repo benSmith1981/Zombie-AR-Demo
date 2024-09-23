@@ -152,8 +152,8 @@ public class GoalManager : MonoBehaviour
             m_PassthroughToggle.isOn = true;
 
         // Enable AR planes (or other gameplay features that were part of onboarding)
-        //if (m_ARPlaneManager != null)
-         //   m_ARPlaneManager.enabled = true;
+        if (m_ARPlaneManager != null)
+           m_ARPlaneManager.enabled = true;
 
         // Directly complete onboarding steps
         CompleteGoal();

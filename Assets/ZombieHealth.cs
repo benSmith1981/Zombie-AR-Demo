@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation; // Import AR Foundation for handling AR planes
 
 public class ZombieHealth : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class ZombieHealth : MonoBehaviour
     public float health = 100f;
     private Animator animator;
     private bool isDead = false;
+
+        // Material to apply to the AR plane when the zombie hits it
+    [SerializeField] private Material cutoutHoleMaterial;
+
 
     private void Start()
     {
@@ -38,7 +43,32 @@ public class ZombieHealth : MonoBehaviour
         {
             TakeDamage(50f); // Take damage when hit by a bullet (you can adjust this value)
         }
+        else if (other.CompareTag("ARPlane"))
+        {
+            // When zombie collides with an AR wall, create a hole in the wall
+            //CreateHoleInWall(other);
+        }
     }
+
+        // Create a hole in the AR wall when the zombie collides with it
+    void CreateHoleInWall(Collider wallCollider)
+    {
+        // Get the ARPlaneMeshVisualizer to modify the wall's material
+        ARPlaneMeshVisualizer meshVisualizer = wallCollider.GetComponent<ARPlaneMeshVisualizer>();
+        if (meshVisualizer != null)
+        {
+            // Apply the cutout material (or transparent material) to create the hole
+            MeshRenderer meshRenderer = meshVisualizer.GetComponent<MeshRenderer>();
+            if (meshRenderer != null && cutoutHoleMaterial != null)
+            {
+                meshRenderer.material = cutoutHoleMaterial;
+
+                // Optional: Display debug message
+                Debug.Log("Zombie hit the AR wall and created a hole.");
+            }
+        }
+    }
+
 
     public void TriggerDeath()
     {
